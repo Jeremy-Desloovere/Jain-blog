@@ -1,0 +1,14 @@
+<footer >
+
+<div class="dark:bg-slate-800 dark:text-white flex flex-col items-center justify-center py-6">
+
+		<ul class="my-4 flex gap-x-4">
+			<li *ngFor="let social of socials">
+				<a class="cursor-pointer" target="_blank" [href]="social.url">
+					<img src="../assets/svg/{{ social.icon }}.svg" alt="{{ social.icon }}"/>
+				</a>
+			</li>
+		</ul>
+		<p>Designed and built by Jérémy Desloovere - Copyright 2023</p>
+	</div>
+</footer>

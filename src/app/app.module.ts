@@ -9,6 +9,7 @@ import { PageDiscographyComponent } from './pages/page-discography/page-discogra
 import { PageNewsComponent } from './pages/page-news/page-news.component';
 import { PageAutobiographyComponent } from './pages/page-autobiography/page-autobiography.component';
 import { PagePhotosComponent } from './pages/page-photos/page-photos.component';
+import { HomeComponent } from './pages/page-home/page-home.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { PagePhotosComponent } from './pages/page-photos/page-photos.component';
     PageNewsComponent,
     PageAutobiographyComponent,
     PagePhotosComponent,
+    HomeComponent,
 
   ],
   imports: [

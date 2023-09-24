@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,ts}", "node_modules/preline/dist/*.js"],
+  content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {},
   },
-  plugins: [require("preline/plugin")],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light", "dark", "synthwave"],
+  },
 };

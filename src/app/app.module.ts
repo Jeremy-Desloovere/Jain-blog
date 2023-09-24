@@ -10,6 +10,10 @@ import { PageNewsComponent } from './pages/page-news/page-news.component';
 import { PageAutobiographyComponent } from './pages/page-autobiography/page-autobiography.component';
 import { PagePhotosComponent } from './pages/page-photos/page-photos.component';
 import { HomeComponent } from './pages/page-home/page-home.component';
+import { PageContactComponent } from './pages/page-contact/page-contact.component';
+import { PageForumComponent } from './pages/page-forum/page-forum.component';
+import { PageNotfoundComponent } from './pages/page-notfound/page-notfound.component';
+import { PageDiscographyDetailsComponent } from './pages/page-discography-details/page-discography-details.component';
 
 
 @NgModule({
@@ -22,6 +26,10 @@ import { HomeComponent } from './pages/page-home/page-home.component';
     PageAutobiographyComponent,
     PagePhotosComponent,
     HomeComponent,
+    PageContactComponent,
+    PageForumComponent,
+    PageNotfoundComponent,
+    PageDiscographyDetailsComponent
 
   ],
   imports: [

@@ -1,11 +1,11 @@
-<footer >
+<footer>
 
-<div class="dark:bg-base-200 dark:text-white flex flex-col items-center justify-center py-6 mt-28 ">
+	<div class="dark:bg-base-200 dark:text-white flex flex-col items-center justify-center py-6 mt-28 ">
 
 		<ul class="my-4 flex gap-x-4">
 			<li *ngFor="let social of socials">
 				<a class="cursor-pointer" target="_blank" [href]="social.url">
-					<img width="50" height="50" src="../assets/images/social/{{ social.icon }}" alt="{{ social.icon }}"/>
+					<i class="fa-brands {{social.icon}} fa-xl"></i>
 				</a>
 			</li>
 		</ul>

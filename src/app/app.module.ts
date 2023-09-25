@@ -14,6 +14,7 @@ import { PageContactComponent } from './pages/page-contact/page-contact.componen
 import { PageForumComponent } from './pages/page-forum/page-forum.component';
 import { PageNotfoundComponent } from './pages/page-notfound/page-notfound.component';
 import { PageDiscographyDetailsComponent } from './pages/page-discography-details/page-discography-details.component';
+import { SocialComponent } from './components/social/social.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { PageDiscographyDetailsComponent } from './pages/page-discography-detail
     PageContactComponent,
     PageForumComponent,
     PageNotfoundComponent,
-    PageDiscographyDetailsComponent
+    PageDiscographyDetailsComponent,
+    SocialComponent
 
   ],
   imports: [

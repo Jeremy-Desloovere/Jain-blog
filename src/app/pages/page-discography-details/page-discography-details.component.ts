@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Album, albums } from '../../data/discography';
+import { albums } from '../../data/discography';
 import { ActivatedRoute } from '@angular/router';
+import { Album } from 'src/app/models/album';
+import { SocialMusic } from 'src/app/models/social_music';
+
+
 
 @Component({
   selector: 'app-page-discography-details',
@@ -9,6 +13,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PageDiscographyDetailsComponent implements OnInit {
   album: Album | undefined;
+  music_link: SocialMusic | undefined;
 
   constructor(private route: ActivatedRoute) {}
 
@@ -16,10 +21,8 @@ export class PageDiscographyDetailsComponent implements OnInit {
     const routeParams = this.route.snapshot.paramMap;
     const albumIdFromRoute = Number(routeParams.get('id'));
 
-    console.log(albumIdFromRoute);
     this.album = albums.find((album) => album.id === albumIdFromRoute);
-    console.log(this.album)
+    this.music_link = this.album?.social_music;
+    console.log(this.music_link);
   }
-
-
 }

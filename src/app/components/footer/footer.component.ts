@@ -15,18 +15,19 @@ export class FooterComponent {
   socials: Social[] = [
     {
       name: 'Github',
-      icon: 'github.png',
+      icon: 'fa-square-github',
       url: 'https://github.com/Jeremy-Desloovere/',
     },
     {
       name: 'Twitter',
-      icon: 'twitter.svg',
+      icon: 'fa-square-x-twitter',
       url: 'https://twitter.com/jeremydesloovere',
     },
     {
       name: 'LinkedIn',
-      icon: 'linkedin.svg',
+      icon: 'fa-linkedin',
       url: 'https://www.linkedin.com/in/jeremy-desloovere/',
     },
   ];
 }
+

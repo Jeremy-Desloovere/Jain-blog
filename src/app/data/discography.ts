@@ -1,23 +1,19 @@
-export interface Album {
-  id: number;
-  title: string;
-  year: string;
-  description: string;
-  tracks: AlbumTrack[];
-  photoCover: string;
-}
-
-export interface AlbumTrack {
-  id: number;
-  title: string;
-  duration: string;
-}
+import { Album } from '../models/album';
 
 export const albums: Album[] = [
   {
     id: 1,
     title: 'Zanaka',
     year: '2015',
+    social_music:
+      {
+        youtube:
+          'https://www.youtube.com/watch?v=KDXOzr0GoA4&list=PL8qMpBbkSSb4gx7zuiSoHs6lOUeqHLAhJ',
+        spotify:
+          'https://open.spotify.com/intl-fr/album/2S12TNfqdnUFdTfYlE96tb',
+        deezer: 'https://www.deezer.com/fr/album/11375984',
+        appleMusic: 'https://music.apple.com/fr/album/zanaka/1046165664',
+      },
     description:
       'Zanaka est le premier album de la chanteuse française Jain, sorti le 6 novembre 2015. Il contient des musiques extraites de son premier EP Hope, dont le titre Come. Il est certifié disque de diamant en France en décembre 2018.',
     tracks: [
@@ -78,6 +74,15 @@ export const albums: Album[] = [
     id: 2,
     title: 'Souldier',
     year: '2018',
+    social_music:
+      {
+        youtube:
+          'https://www.youtube.com/watch?v=-Npr_8FtQzM&list=OLAK5uy_mBXMtEDstRGSOfGdW5oekO1eH1ByezGlg',
+        spotify:
+          'https://open.spotify.com/intl-fr/album/1qlfzN8ITUS58EU0T7PAWX',
+        deezer: 'https://www.deezer.com/fr/album/71131652',
+        appleMusic: 'https://music.apple.com/fr/album/souldier/1402698958',
+      },
     description:
       "Souldier est le deuxième album studio de la chanteuse française Jain, sorti le 24 août 2018. Après le succès de son premier album et de la tournée qui a suivi, Jain se rend à Cuba en septembre 2017 pour découvrir de nouvelles inspirations pour l'enregistrement de son deuxième album. Puis, elle se rend au studio Spookland à partir du 2 octobre pour le finir.",
     tracks: [
@@ -139,6 +144,18 @@ export const albums: Album[] = [
     id: 3,
     title: 'The Fool',
     year: '2023',
+    social_music:
+      {
+        youtube:
+          'https://www.youtube.com/watch?v=YFA_hOHYkqU&list=OLAK5uy_lSKpwf8PtkYsb3afzC83us6A3HfYhG6NA',
+
+        spotify:
+          'https://open.spotify.com/intl-fr/album/7arCig498ft2Kc7pJJFHxw',
+
+        deezer: 'https://www.deezer.com/fr/album/408025477',
+
+        appleMusic: 'https://music.apple.com/fr/album/the-fool/1672031619',
+      },
     description:
       "The Fool est le troisième album studio de la chanteuse française Jain, sorti le 21 avril 2023. Après le succès de ses deux premiers albums, Jain s'accorde une pause en 2019 et décide de changer d'influences en allant plutôt vers la musique qu'elle écoute, marquée par les albums des années 19701. Pour l'écriture du disque, l'artiste s'isole dans une cabane de pêcheur à Marseille2, avec une guitare3. Chaque chanson est associée à une carte du tarot de Marseille2. Les textes autobiographiques sont plus intimistes et personnels que dans les albums précédents.",
     tracks: [

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Album, albums } from '../../data/discography';
+import { albums } from 'src/app/data/discography';
+import { Album } from 'src/app/models/album';
 
 @Component({
   selector: 'app-page-discography',

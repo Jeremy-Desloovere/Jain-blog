@@ -1,0 +1,39 @@
+<div class="hero">
+	<div class="hero-content flex-col lg:flex-row-reverse">
+		<div class="text-center lg:text-left">
+			<h1 class="text-5xl font-bold">Contact</h1>
+			<p class="py-6">Ecrivez et envoyez votre petit message. Une réponse vous sera apportée dans un délai de 48h.</p>
+		</div>
+		<div class="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
+			<div class="card-body">
+				<form class="contact-form" (submit)="sendEmail($event)">
+					<div class="form-control">
+						<label class="label">
+							<span class="label-text">Name</span>
+						</label>
+						<input type="text" name="nom" placeholder="Votre prénom" class="input input-bordered"/>
+					</div>
+
+					<div class="form-control">
+						<label class="label">
+							<span class="label-text">Mail</span>
+						</label>
+						<input type="email" name="email" placeholder="Votre mail" class="input input-bordered"/>
+
+					</div>
+
+					<div class="form-control">
+						<label class="label">
+							<span class="label-text">Votre message</span>
+						</label>
+						<textarea class="textarea textarea-bordered h-48" name="message" placeholder="Bio"></textarea>
+					</div>
+
+					<div class="form-control mt-6">
+						<input type="submit" class="btn btn-primary" placeholder="Envoyer"/>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
